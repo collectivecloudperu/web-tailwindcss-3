@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Home - Mi Proyecto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CDN de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script> 
+
+    <!-- Hoja de estilos Personalizada --> 
+    <link rel="stylesheet" href="assets/css/estilos.css">
+
+  </head>
+
+  <body>
+
+    <div class="min-h-full">
+
+      <!-- Menú -->
+      <nav class="nav flex flex-wrap items-center justify-between px-4 bg-gray-800 px-20">
+        <div class="flex flex-no-shrink items-center mr-6 py-3 text-grey-darkest">
+          <span class="font-semibold text-xl tracking-tight text-white">Mi Proyecto</span>
+        </div>
+
+        <input class="menu-btn hidden" type="checkbox" id="menu-btn">
+        <label class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none" for="menu-btn">
+          <span class="navicon bg-grey-darkest flex items-center relative"></span>
+        </label>
+
+        <ul class="menu border-b md:border-none flex justify-end list-reset m-0 w-full md:w-auto">
+          <li class="border-t md:border-none">
+            <a href="index.html" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker font-bold text-white ">Home</a>
+          </li>
+          
+          <li class="border-t md:border-none">
+            <a href="nosotros.html" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker text-white ">Nosotros</a>
+          </li>
+          
+          <li class="border-t md:border-none">
+            <a href="servicios.html" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker text-white ">Servicios</a>
+          </li>
+
+          <li class="border-t md:border-none">
+            <a href="contacto.html" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker text-white ">Contacto</a>
+          </li>
+          
+        </ul>
+      </nav>
+      
+      <main class="mt-10">
+        
+        <!-- Carousel -->
+        <div class="carousel mx-auto max-w-5xl px-4 sm:px-6 lg:px-12">
+          <div class="carousel-inner">
+              <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+              <div class="carousel-item">
+                <a href="https://blog.nubecolectiva.com/10-ideas-de-regalos-geniales-para-programadores-parte-1/" target="_blank">
+                  <img src="https://blog.nubecolectiva.com/wp-content/uploads/2021/12/gimg_destacada_blog_devs-930x360.png" alt="10 Ideas de Regalos Geniales Para Programadores – Parte 1">
+                </a>
+              </div>
+              <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+              <div class="carousel-item">
+                <a href="https://blog.nubecolectiva.com/que-es-la-web-3-0-y-otros-detalles/" target="_blank">
+                  <img src="https://blog.nubecolectiva.com/wp-content/uploads/2021/11/rimg_destacada_blog_devs-930x360.png" alt="Qué es La Web 3.0 y Otros Detalles">
+                </a>
+              </div>
+              <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+              <div class="carousel-item">
+                <a href="https://blog.nubecolectiva.com/como-hacer-analisis-a-los-productos-de-una-tienda-de-postres-mediante-data-science-parte-1/" target="_blank">
+                  <img src="https://blog.nubecolectiva.com/wp-content/uploads/2021/10/edit_img_destacada_blog_devs-1-930x360.png" alt="Como hacer Ciencia de Datos (Data Science) a los productos de una Tienda de Postres – Parte 1">
+                </a>
+              </div>
+              <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+              <label for="carousel-2" class="carousel-control next control-1">›</label>
+              <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+              <label for="carousel-3" class="carousel-control next control-2">›</label>
+              <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+              <label for="carousel-1" class="carousel-control next control-3">›</label>
+              <ol class="carousel-indicators">
+                  <li>
+                      <label for="carousel-1" class="carousel-bullet">•</label>
+                  </li>
+                  <li>
+                      <label for="carousel-2" class="carousel-bullet">•</label>
+                  </li>
+                  <li>
+                      <label for="carousel-3" class="carousel-bullet">•</label>
+                  </li>
+              </ol>
+          </div>
+        </div>
+
+        <!-- Servicios Destacados -->
+        <div class="container ml-auto mr-auto flex flex-wrap items-start mt-8">
+          <div class="w-full pl-5 lg:pl-2 mb-4 mt-4">
+            <h1 class="text-3xl font-extrabold text-center"> Servicios Destacados </h1>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+            <div class="bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+              <figure class="mb-2">
+                <img src="assets/img/s1.png" alt="" class="h-64 ml-auto mr-auto" />
+              </figure>
+              <div class="rounded-lg p-4 flex flex-col">
+                <div>
+                  <h5 class="text-2xl font-bold leading-none text-center"> Servicio 1 </h5>
+                  <p class="mt-4">
+                    Nulla blandit ac tortor a ullamcorper. Fusce dictum, quam at ornare finibus, leo erat lacinia urna, vitae interdum est lacus vel massa. Donec porttitor posuere lacus sit amet auctor. Fusce fringilla mauris ipsum, nec tempus odio porttitor a. Cras eu urna eget est egestas pulvinar.
+                  </p>
+                </div>
+                <div class="flex items-center mt-4">
+                  <a href="#" class="font-bold text-orange-900">Leer más</a>
+                  <button href="javascript:;" class="rounded-full bg-purple-900 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-4 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-current m-auto">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+            <div class="bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+              <figure class="mb-2">
+                <img src="assets/img/s2.png" alt="" class="h-64 ml-auto mr-auto" />
+              </figure>
+              <div class="rounded-lg p-4 flex flex-col">
+                <div>
+                  <h5 class="text-2xl font-bold leading-none text-center"> Servicio 2 </h5>
+                  <p class="mt-4">
+                    Nulla blandit ac tortor a ullamcorper. Fusce dictum, quam at ornare finibus, leo erat lacinia urna, vitae interdum est lacus vel massa. Donec porttitor posuere lacus sit amet auctor. Fusce fringilla mauris ipsum, nec tempus odio porttitor a. Cras eu urna eget est egestas pulvinar.
+                  </p>
+                </div>
+                <div class="flex items-center mt-4">
+                  <a href="#" class="font-bold text-orange-900">Leer más</a>
+                  <button href="javascript:;" class="rounded-full bg-purple-900 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-4 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-current m-auto">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+            <div class="bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+              <figure class="mb-2">
+                <img src="assets/img/s3.png" alt="" class="h-64 ml-auto mr-auto" />
+              </figure>
+              <div class="rounded-lg p-4 flex flex-col">
+                <div>
+                  <h5 class="text-2xl font-bold leading-none text-center"> Servicio 3 </h5>
+                  <p class="mt-4">
+                    Nulla blandit ac tortor a ullamcorper. Fusce dictum, quam at ornare finibus, leo erat lacinia urna, vitae interdum est lacus vel massa. Donec porttitor posuere lacus sit amet auctor. Fusce fringilla mauris ipsum, nec tempus odio porttitor a. Cras eu urna eget est egestas pulvinar.
+                  </p>
+                </div>
+                <div class="flex items-center mt-4">
+                  <a href="#" class="font-bold text-orange-900">Leer más</a>
+                  <button href="javascript:;" class="rounded-full bg-purple-900 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-4 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-current m-auto">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+            <div class="bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+              <figure class="mb-2">
+                <img src="assets/img/s4.png" alt="" class="h-64 ml-auto mr-auto" />
+              </figure>
+              <div class="rounded-lg p-4 flex flex-col">
+                <div>
+                  <h5 class="text-2xl font-bold leading-none text-center"> Servicio 4 </h5>
+                  <p class="mt-4">
+                    Nulla blandit ac tortor a ullamcorper. Fusce dictum, quam at ornare finibus, leo erat lacinia urna, vitae interdum est lacus vel massa. Donec porttitor posuere lacus sit amet auctor. Fusce fringilla mauris ipsum, nec tempus odio porttitor a. Cras eu urna eget est egestas pulvinar.
+                  </p>
+                </div>
+                <div class="flex items-center mt-4">
+                  <a href="#" class="font-bold text-orange-900">Leer más</a>
+                  <button href="javascript:;" class="rounded-full bg-purple-900 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-4 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-current m-auto">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+
+        <!-- Newsletter --> 
+        <div class="mx-auto max-w-7xl p-4">
+
+          <div class="w-full mb-4 mt-4">
+            <h1 class="text-3xl font-extrabold text-center"> Newsletter </h1>
+          </div>
+
+          <form method="post">
+            <div class="md:flex md:items-center mb-6">
+
+              <div class="md:w-1/2">
+                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+                  Email: 
+                </label>
+              </div>
+              <div class="md:w-2/3 mr-2">
+                <input class="appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="email" placeholder="micorreo@mail.com" required>
+              </div>
+              <div class="md:w-2/3">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                Aceptar
+              </button>
+              </div>
+
+            </div> 
+
+
+          </form>
+          
+        </div>
+
+      </main>     
+      
+    </div>
+
+    <!-- Footer --> 
+    <footer class="footer-1 bg-gray-100 py-8 sm:py-12 text-center">
+      <div class="container mx-auto">
+        <p>©Mi Proyecto <script>document.write(new Date().getFullYear())</script>. Todos los derechos reservados.</p>        
+      </div>
+    </footer>
+
+  </body>
+</html>
